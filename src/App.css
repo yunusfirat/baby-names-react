@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  position: relative;
 }
 
 .App-logo {
@@ -27,6 +28,63 @@
 .App-link {
   color: #61dafb;
 }
+.container {
+  border-top: #FFC6E5 solid 4px;
+  border-left: #FFC6E5 solid 4px ;
+  border-right: #A0CFEE solid 4px;
+  border-bottom: #A0CFEE solid 4px;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 32rem;
+  width: 35rem;
+  margin: 0;
+  position: absolute;
+  left: 30%;
+  top: 100px;
+  
+}
+.buttons {
+  padding: 2rem;
+}
+
+.female-btn {
+  color:#A11963;
+  background-color: #FFC6E5;
+  padding: 2px;
+  margin: 2px;
+  border-radius: 3px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.male-btn {
+  color:#205B83;
+  background-color: #A0CFEE;
+  padding: 2px;
+  margin: 2px;
+  border-radius: 3px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes App-logo-spin {
   from {

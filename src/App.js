@@ -1,9 +1,9 @@
 import "./App.css";
-
+import BabyNameList from "./BabyNameList";
 function App() {
   return (
     <div className="App">
-      <h1>Hello world!</h1>
+      <BabyNameList />
     </div>
   );
 }

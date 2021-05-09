@@ -1,6 +1,6 @@
 # Challenge: "Baby Name Picker (React)"
 
-![Example Screenshot from the finished challenge](./example-screenshots/finished.png)
+![Example Screenshot from the finished challenge](https://cyf-yunusfirat-baby-names.netlify.app/)
 
 ## Challenge Overview
 
