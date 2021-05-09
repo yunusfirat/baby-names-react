@@ -72,10 +72,35 @@
   cursor: pointer;
 }
 
+.input-style {
+  border-top: #FFC6E5 solid 4px;
+  border-left: #FFC6E5 solid 4px ;
+  border-right: #A0CFEE solid 4px;
+  border-bottom: #A0CFEE solid 4px;
+  height: 5rem;
+  width: 45rem;
+  position: absolute;
+  left: 25%;
+  margin-top: 5px;
+  border-radius: 7px;
+}
+input {
+  margin-top: 7px;
+  border: #A0CFEE solid 4px;
+  border-radius: 4px;
+}
 
+hr {
+  width: 80%;
+  position: absolute;
+  bottom: -3px;
+  left:13%;
+}
 
-
-
+.move-up {
+  transition-delay: .1s;
+  transform: translateY(-437px);
+}
 
 
 

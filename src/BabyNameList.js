@@ -1,24 +1,21 @@
 import React from "react";
 import Data from "./babyNamesData.json";
 import SingleBaby from "./SingleBaby";
-const BabyNameList = () => {
+const BabyNameList = ( { input } ) => {
     const sortedBabies = Data.sort(function(a, b){
-        if(a.name < b.name) {
-             return -1;
-            }
-        if(a.firstname > b.firstname){
-            return 1;
-         }
-            return 0;
-    });
+     return (
+            a.name < b.name ? -1 : 1 || 0 );
+    }).filter((baby) => input !== "" ? baby.name.toLocaleLowerCase().includes(input.toLocaleLowerCase()) : baby);
+
     return (
         <div className="container">
             <div className="buttons">
             {sortedBabies.map((baby) => {
                 return(
-                    <SingleBaby baby={baby} />
+                    <SingleBaby key={baby.id} baby={baby} />
                 );
             })}
+            <hr className={input.length > 1 ? "move-up" : null } />
         </div>
         </div>
     );
