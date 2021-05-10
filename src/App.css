@@ -116,8 +116,18 @@ top:20px;
 margin-left:97px ;
 }
 
-
-
+.gender-button {
+  display: flex;
+  margin-left: 25px;
+  margin-top: 9px;
+}
+.icon {
+  margin-right: 3px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 4px;
+}
 
 
 

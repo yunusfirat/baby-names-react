@@ -10,13 +10,15 @@ const SearchBaby = ({ input, setInput, favourites, setFavourites, data, setData 
     return (
         <div className="input-style">
             <Favourites favourites= {favourites} setFavourites={setFavourites} data={data} setData={setData} />
+            <div style={{ display:"flex", left:"29%", position:"absolute" }} >
             <input
             onChange={search}
             value={input}
             placeholder="Search Baby Name"
             id="searchbaby"/>
+            <NameGenderFilter data={data} setData={setData} />
+            </div>
             <hr/>
-            <NameGenderFilter />
         </div>
     );
 };
