@@ -1,7 +1,7 @@
 import React from "react";
+import Favourites from "./Favourites";
 
-
-const SearchBaby = ({ input, setInput }) => {
+const SearchBaby = ({ input, setInput, favourites, setFavourites, data, setData   }) => {
 
     const search = (event) => {
         setInput(event.target.value);
@@ -9,6 +9,7 @@ const SearchBaby = ({ input, setInput }) => {
 
     return (
         <div className="input-style">
+            <Favourites favourites= {favourites} setFavourites={setFavourites} data={data} setData={setData} />
             <input
             onChange={search}
             value={input}

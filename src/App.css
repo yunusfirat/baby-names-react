@@ -102,9 +102,19 @@ hr {
   transform: translateY(-437px);
 }
 
+.favourites{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-top: 14px;
 
 
+}
 
+.favourites-p{
+top:20px;
+margin-left:97px ;
+}
 
 
 
