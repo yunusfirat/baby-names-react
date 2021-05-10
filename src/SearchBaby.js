@@ -1,6 +1,6 @@
 import React from "react";
 import Favourites from "./Favourites";
-
+import NameGenderFilter from "./NameGenderFilter";
 const SearchBaby = ({ input, setInput, favourites, setFavourites, data, setData   }) => {
 
     const search = (event) => {
@@ -16,6 +16,7 @@ const SearchBaby = ({ input, setInput, favourites, setFavourites, data, setData 
             placeholder="Search Baby Name"
             id="searchbaby"/>
             <hr/>
+            <NameGenderFilter />
         </div>
     );
 };

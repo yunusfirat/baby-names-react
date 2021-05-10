@@ -6,7 +6,6 @@ const Favourites = ({ favourites, setFavourites, setData, data  }) => {
         let name = e.target.value;
         let removedElement = favourites.filter((baby) => baby.name !== name);
         let addedElement = favourites.filter((baby) => baby.name === name);
-        console.log(addedElement);
         setFavourites(removedElement);
         setData(data.concat(addedElement));
     };
